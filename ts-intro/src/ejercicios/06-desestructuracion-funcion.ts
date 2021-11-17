@@ -2,7 +2,7 @@
     ==== Código de TyperScript ====
 */
 
-interface Producto {
+export interface Producto {
     desc: string;
     precio: number;
 }
@@ -17,7 +17,7 @@ const tableta: Producto = {
     precio: 350
 }
 
-function calculaISV(productos: Producto[]): [number, number]{
+export function calculaISV(productos: Producto[]): [number, number]{
 
     let total = 0;
 
